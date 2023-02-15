@@ -17,15 +17,15 @@ public class BiblioService {
     private final LivreRepository livreRepository;
     private final AuteurLivreRepository auteurLivreRepository;
 
-    private Auteur findAuteurDominant(Livre livre){
+    public Auteur findAuteurDominant(Livre livre){
         return null;
     }
 
-    private List<Livre> findLivresParUnSeulAuteur(){
+    public List<Livre> findLivresParUnSeulAuteur(){
         return null ;
     }
 
-    private List<Livre> findLivreInfNbChapt(int nb_chap_tot){
+    public List<Livre> findLivreInfNbChapt(int nb_chap_tot){
 
         return livreRepository.findByNb_chap_totLessThan(nb_chap_tot);
     }
